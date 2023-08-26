@@ -1,4 +1,6 @@
-var chalk = require('chalk');
+// var chalk = require('chalk');
+import { Chalk as chalk } from "chalk";
+
 
 function Dog(name) {
     this.name = name;
@@ -13,4 +15,5 @@ Dog.prototype.sayHi = function() {
     console.log('Hi! Im a dog. My name is ' + chalk.blue(this.name));
 };
 
-module.export = Dog;
+// module.export = Dog;
+export {Dog}
